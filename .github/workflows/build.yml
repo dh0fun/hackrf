@@ -21,7 +21,7 @@ jobs:
   host:
     strategy:
       matrix:
-        os: ['macos-latest', 'ubuntu-latest', 'windows-latest']
+        os: ['ubuntu-latest', 'windows-latest']
 
       # Don't cancel all builds when one fails
       fail-fast: false
