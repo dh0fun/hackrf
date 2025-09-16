@@ -30,10 +30,6 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Install dependencies (macOS)
-      run: brew install fftw
-      if: matrix.os == 'macos-latest'
-
     - name: Install dependencies (Ubuntu)
       run: |
         sudo apt update
