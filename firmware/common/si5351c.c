@@ -363,7 +363,7 @@ void si5351c_clkout_enable(si5351c_driver_t* const drv, uint8_t enable)
 		clkout = 2;
 	}
 	/* Configure clock to 10MHz */
-	si5351c_configure_multisynth(drv, clkout, 80 * 128 - 512, 0, 1, 0);
+	si5351c_configure_multisynth(drv, clkout, 1148, 559104, 1048576, 0);
 
 	si5351c_configure_clock_control(drv, active_clock_source);
 	si5351c_enable_clock_outputs(drv);
